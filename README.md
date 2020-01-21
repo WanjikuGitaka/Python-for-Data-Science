@@ -25,3 +25,15 @@ for country in pop_millions:
     
     output = template.format(name, pop)
     print(output) 
+# Summarizing gender artwork data
+ender_freq = {}
+for row in moma:
+    gender = row[5]
+    if gender not in gender_freq:
+        gender_freq[gender] = 1
+    else:
+        gender_freq[gender] += 1
+        
+for gender, num in gender_freq.items():
+    template = "There are {n:,} artworks by {g} artists"
+    print(template.format(g=gender, n=num))

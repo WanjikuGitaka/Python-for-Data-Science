@@ -1,2 +1,2 @@
-# Python-for-Data-Science
-Learning and training!!!
+# Python-for-DS
+Learning and training!
